@@ -4,6 +4,7 @@ import { InputNumber } from "primereact/inputnumber";
 import { InputText } from "primereact/inputtext";
 import { Slider } from "primereact/slider";
 import { ChangeEvent, ChangeEventHandler, useState } from "react";
+import { GiPadlock } from "react-icons/gi";
 
 export const MainGeneratePassword = () => {
   const [passwordLength, setPasswordLength] = useState(12);
@@ -51,16 +52,18 @@ export const MainGeneratePassword = () => {
           }}
           onChange={(e) => setGeneratedPassword(e.target.value)}
         />
+
         <Button
           onClick={generatePassword}
           pt={{
             root: {
               className:
-                "!focus:shadow-none !focus:border-none  !focus-visible:border-none  bg-blue-500 text-white ml-auto mr-[24px] !w-auto py-2 px-3",
+                "!focus:shadow-none !focus:border-none  !focus-visible:border-none  bg-blue-500 text-white ml-auto mr-[24px] !w-auto py-2 px-3 flex gap-2",
             },
           }}
         >
           Generate Password
+          <GiPadlock />
         </Button>
       </div>
       <div className="w-full flex gap-5 mt-20 px-10">
