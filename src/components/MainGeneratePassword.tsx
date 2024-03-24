@@ -56,7 +56,7 @@ export const MainGeneratePassword = () => {
           pt={{
             root: {
               className:
-                "!focus:shadow-none !focus:border-none  !focus-visible:border-none  bg-blue-500 text-white ml-auto mr-[24px] !w-[170px] p-2",
+                "!focus:shadow-none !focus:border-none  !focus-visible:border-none  bg-blue-500 text-white ml-auto mr-[24px] !w-auto py-2 px-3",
             },
           }}
         >
